@@ -1,0 +1,66 @@
+\doxysection{Racional.\+h}
+\label{Racional_8h_source}\textbf{ Ir a la documentación de este archivo.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_RACIONAL}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_RACIONAL}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }Racional\ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{int}\ num;\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{int}\ den;\ }
+\DoxyCodeLine{00051\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ Racional();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00065\ \ \ Racional(\textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ d);\ \ }
+\DoxyCodeLine{00066\ \ \ \textcolor{comment}{//\ Racional(int\ n=0,\ int\ d=1):\ num(n),den(d)\ \{\}}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ Racional\ (\textcolor{keyword}{const}\ Racional\&\ c);\ \ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \textcolor{keywordtype}{int}\ numerador\ ();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \textcolor{keywordtype}{int}\ denominador();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{void}\ asignar(\textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ d);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00103\ \ \ \textcolor{keywordtype}{bool}\ comparar(Racional\ r);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ \ \ \textcolor{keywordtype}{void}\ \ print();}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ Racional\ operator+(\textcolor{keyword}{const}\ Racional\ \&\ r);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ Racional\ operator*(\textcolor{keyword}{const}\ Racional\ \&\ r);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ }
+\DoxyCodeLine{00127\ \ \ \textcolor{keywordtype}{void}\ operator+=(\textcolor{keyword}{const}\ Racional\ \&r);}
+\DoxyCodeLine{00128\ \ \ }
+\DoxyCodeLine{00134\ \ \ \textcolor{keywordtype}{bool}\ operator\ ==(\textcolor{keyword}{const}\ Racional\ \&r);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00143\ \ \ \textcolor{keyword}{friend}\ ostream\&\ operator<<\ (ostream\&\ os,\ \textcolor{keyword}{const}\ Racional\&\ r);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00153\ \ \ \textcolor{keyword}{friend}\ istream\&\ operator>>\ (istream\&\ is,\ Racional\&\ r);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00158\ \ \ Racional\ \ simplifica();}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00165\ \textcolor{comment}{/*************\ INCLUIR\ OTRAS\ FUNCIONES\ y\ OPERADORES\ *********/}}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \textcolor{comment}{/*\ Por\ ejemplo:}}
+\DoxyCodeLine{00168\ \textcolor{comment}{\ \ \ la\ funcion\ irreducible\ que\ nos\ convierta\ un\ racional\ r}}
+\DoxyCodeLine{00169\ \textcolor{comment}{\ \ \ en\ irreducible,\ ej.\ 12/4\ -\/>\ 3/1}}
+\DoxyCodeLine{00170\ \textcolor{comment}{\ \ \ la\ funcion\ real\ que\ devuelva\ el\ valor\ real\ asociado\ al\ racional}}
+\DoxyCodeLine{00171\ \textcolor{comment}{\ \ \ ej,\ 1/2\ -\/>\ 0.5}}
+\DoxyCodeLine{00172\ \textcolor{comment}{}}
+\DoxyCodeLine{00173\ \textcolor{comment}{\ \ \ Operador\ de\ resta,\ multiplicacion,\ division,etc.\ \ }}
+\DoxyCodeLine{00174\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00175\ \ }
+\DoxyCodeLine{00176\ \};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
