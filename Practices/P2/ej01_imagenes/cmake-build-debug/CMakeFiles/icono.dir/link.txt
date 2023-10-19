@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/icono.dir/profesor/src/icono.cpp.o  -o icono  libimage.a 

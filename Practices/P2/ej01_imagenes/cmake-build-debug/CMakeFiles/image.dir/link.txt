@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimage.a  CMakeFiles/image.dir/profesor/src/image.cpp.o CMakeFiles/image.dir/profesor/src/imageop.cpp.o CMakeFiles/image.dir/profesor/src/imageIO.cpp.o
+/usr/bin/ranlib libimage.a

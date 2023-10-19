@@ -1,0 +1,5 @@
+/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/build/CMakeFiles/image.dir
+/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/build/CMakeFiles/negativo.dir
+/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/build/CMakeFiles/doc_doxygen.dir
+/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/build/CMakeFiles/edit_cache.dir
+/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/build/CMakeFiles/rebuild_cache.dir

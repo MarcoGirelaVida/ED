@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../profesor/include/image.h
+cstdlib
+-
+imageIO.h
+../profesor/include/imageIO.h
+
+../profesor/include/imageIO.h
+
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/src/image.cpp
+cstring
+-
+cassert
+-
+iostream
+-
+image.h
+-
+imageIO.h
+-
+
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/src/imageIO.cpp
+string
+-
+imageIO.h
+-
+fstream
+-
+
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/src/imageop.cpp
+iostream
+-
+cmath
+-
+image.h
+-
+cassert
+-
+

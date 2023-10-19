@@ -1,0 +1,10 @@
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/barajar.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/contraste.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/icono.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/subimagen.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/zoom.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/negativo.dir
+/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/CMakeFiles/image.dir
