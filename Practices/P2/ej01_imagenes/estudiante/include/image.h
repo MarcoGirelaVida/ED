@@ -209,6 +209,7 @@ void set_pixel (int i, int j, byte value);
       * @pre O <= fil < I.Num_ Filas() II O <= col < I.Num Columnas()
       * @return el valor del píxel contenido en (fil,col)
       * @post La imagen no se modifica.
+      * @post Si el pixel solicitado está fuera de rango se proporciona el pixel de la imagen más cercano disponible
       */
     byte get_pixel (int i, int j) const;
 

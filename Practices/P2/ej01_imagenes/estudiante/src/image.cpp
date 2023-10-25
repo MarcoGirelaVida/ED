@@ -135,7 +135,21 @@ void Image::set_pixel (int i, int j, byte value) {
     img[i][j] = value;
 }
 byte Image::get_pixel (int i, int j) const {
-    return img[i][j];
+
+    int i_value = i, j_value = j;
+    if (i < 0)
+        i_value = 0;
+
+    if (j < 0)
+        j_value = 0;
+
+    if (i >= get_rows())
+        i_value = get_rows();
+
+    if (j >= get_cols())
+        j_value = get_cols();
+    
+    return img[i_value][j_value];
 }
 
 // This doesn't work if representation changes
