@@ -251,24 +251,73 @@ void set_pixel (int i, int j, byte value);
     // Invierte
     void Invert();
 
-    // Modifica el contraste de una Imagen .
+    /**
+     * @brief Modifica el contraste de una imagen
+     * @param in1 Umbral inferior de la imagen de entrada
+     * @param in2 Umbral superior de la imagen de entrada
+     * @param out1 Umbral inferior de la imagen de salida
+     * @param out2 Umbral superior de la imagen de salida
+     * @pre 0 <= (in1, in2, out1, out2) <= 255
+     * @pre in1 < in2
+     * @pre out1 < out2
+     * @post El objetivo que llama a la función es modificado
+    */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
-    // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+    /**
+     * @brief Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+     * @param nrow Fila inicial para recortar
+     * @param ncol Columna inicial para recortar
+     * @param height Número de filas
+     * @param width Número de columnas
+     * @return Media de la sección indicada
+    */
     double Mean (int i, int j, int height, int width) const;
 
-    // Genera un icono como reducción de una imagen.
+    // Recorre una imagen y aplica una operación sobre la misma
+    //void GoAcrossAndOperate(void (*func)(int ));
+
+    /**
+     * @brief Genera un icono como reducción de una imagen
+     * @param factor Factor de reducción de la imagen original con respecto al icono
+     * @pre factor > 0
+     * @return La imagen iconizada
+     * @post La imagen no se modifica
+     * @post La imagen resultante tendrá tamaño int(filas/factor) X int(columnas/factor). Descartando los decimales de la división
+    */
     Image Subsample(int factor) const;
 
-    // Genera una subimagen.
+    /**
+     * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen
+     * @param nrow Referencia a la variable que almacena la fila inicial para recortar
+     * @param ncol Referencia a la variable que almacena la columna inicial para recortar
+     * @param height Referencia a la variable que almacena el número de filas
+     * @param width Referencia a la variable que almacena el número de columnas
+     * @return True si hay al menos un pixel de la sección que está en al imagen y modifica los valores de las variables de forma que sea
+     * @post Modifica el valor de las 
+    */
+   bool ValidSection(int &nrow, int &ncol, int &height, int &width) const;
+
+    /**
+     * @brief Genera una subimagen
+     * @param nrow Fila inicial para recortar
+     * @param ncol Columna inicial para recortar
+     * @param height Número de filas
+     * @param width Número de columnas
+     * @return Imagen con el recorte
+     * @post El objeto que llama a la función no se modifica
+    */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
-    // Genera una imagen aumentada 2x.
+    /**
+     * @brief Genera una imagen aumentada 2x.
+    */
     Image Zoom2X() const;
 
 
-
-    // Baraja pseudoaleatoriamente las filas de una imagen.
+    /**
+     * @brief  Baraja pseudoaleatoriamente las filas de una imagen.
+    */
     void ShuffleRows();
 } ;
 

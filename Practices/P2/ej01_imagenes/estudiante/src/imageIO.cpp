@@ -55,10 +55,15 @@ char SkipWhitespaces (ifstream& f){
 bool ReadHeader (ifstream& f, int& rows, int& cols){
     int maxvalor;
     string linea;
+
+    // Salta los comentarios
     while (SkipWhitespaces(f) == '#')
       getline(f,linea);
+
+    //Lee las dimensiones y el maxvalor
     f >> cols >> rows >> maxvalor;
     
+    // No sé qué hace
     if (/*str &&*/ f && rows>0 && rows<5000 && cols>0 && cols<5000){
         f.get(); // Saltamos separador
         return true;
