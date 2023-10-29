@@ -16,15 +16,18 @@ int main (int argc, char *argv[])
   Image image, zoomed;
 
   // Comprobar validez de la llamada
-  if (argc != 3){
+  if (argc != 6){
     cerr << "Error: Numero incorrecto de parametros.\n";
-    cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
+    cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino> <fila> <cola> <lado>\n";
     exit (1);
   }
 
   // Obtener argumentos
   origen  = argv[1];
   destino = argv[2];
+  int row = stoi(argv[3]);
+  int col = stoi(argv[4]);
+  int side = stoi(argv[5]);
 
   // Mostramos argumentos
   cout << endl;
@@ -43,8 +46,8 @@ int main (int argc, char *argv[])
   cout << "Dimensiones de " << origen << ":" << endl;
   cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
-  // Calcular el negativo
-  zoomed = image.Zoom2X();
+  // Recorta y amplia
+  zoomed = image.Crop(row,col,side,side).Zoom2X();
 
   // Guardar la imagen resultado en el fichero
   if (zoomed.Save(destino))
