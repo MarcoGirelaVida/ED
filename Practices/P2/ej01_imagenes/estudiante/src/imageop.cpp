@@ -9,31 +9,41 @@
 
 #include <cassert>
 
-// Comprueba la validez de una sección dada
-bool ValidRow(int nrow){ return (0 <= nrow <= get_rows()); }
-bool ValidCol(int ncol){ return (0 <= ncol <= get_col()); }
 bool Image::ValidSection(int &nrow, int &ncol, int &height, int &width) const
 {
     bool result = true;
 
     if (!ValidRow(nrow) && !ValidCol(ncol))
         result = false;
-    else if (!ValidRow(nrow))
+    else if (!ValidRow(nrow) || !ValidRow(nrow+height))
     {
-        if (!ValidCol())
-        {
-            /* code */
-        }
-        
+        if (nrow > get_rows())
+            nrow = get_rows();
+        else if (nrow+height > get_rows())
+            height = get_rows()-nrow;
+        else if (nrow < 0)
+            nrow = 0;
     }
+    else if (!ValidCol(ncol) || !ValidCol(ncol+width))
+    {
+        if(ncol > get_cols())
+            ncol = get_cols();
+        else if (ncol+width > get_cols())
+            width = get_cols()-ncol;
+        else if (ncol < 0)
+            ncol = 0;
+    }
+    
+    return result;
         
 
 }
 
 // 1. Genera una subimagen
-Image Image::Crop(int &nrow, int &ncol, int &height, int &width) const
+Image Image::Crop(int nrow, int ncol, int height, int width) const
 {
     //---Calculo las dimensiones que tendrá la imagen resultado---
+    assert (ValidSection(nrow, ncol, height, width));
     unsigned int rows_cropped = nrow + height,
                 cols_cropped = ncol + width;
 
@@ -53,6 +63,7 @@ Image Image::Crop(int &nrow, int &ncol, int &height, int &width) const
 // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
 double Image::Mean (int i, int j, int height, int width) const
 {
+    assert(ValidSection(i, j, height, width));
     // Declaro la sumatoria y la submatriz de la que calcular la media
     int sum = 0;
 

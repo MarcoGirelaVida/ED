@@ -217,7 +217,6 @@ void set_pixel (int i, int j, byte value);
       * @brief Consulta el valor del píxel k de la imagen desenrrollada.
       * @param k Índice del píxel
       * @pre 0 <= k < filas*columnas
-      * @return el valor del píxel contenido en (k/filas,k%filas)
       * @post La imagen no se modifica.
       */
     byte get_pixel (int k) const;
@@ -288,6 +287,10 @@ void set_pixel (int i, int j, byte value);
     */
     Image Subsample(int factor) const;
 
+    // Comprueba la validez de una sección dada
+    bool ValidRow(int nrow){ return (0 <= nrow <= get_rows()); }
+    bool ValidCol(int ncol){ return (0 <= ncol <= get_cols()); }
+
     /**
      * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen
      * @param nrow Referencia a la variable que almacena la fila inicial para recortar
@@ -297,7 +300,7 @@ void set_pixel (int i, int j, byte value);
      * @return True si hay al menos un pixel de la sección que está en al imagen y modifica los valores de las variables de forma que sea
      * @post Modifica el valor de las 
     */
-   bool ValidSection(int &nrow, int &ncol, int &height, int &width) const;
+    bool ValidSection(int &nrow, int &ncol, int &height, int &width) const;
 
     /**
      * @brief Genera una subimagen
