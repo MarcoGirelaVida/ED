@@ -56,10 +56,17 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
   */
 bool WritePGMImage (const char *path, const unsigned char *datos,
                     const int rows, const int cols);
+/*
+/**
+ * @brief Lee los dos primeros argumentos de un programa y los procesa como imagen origen y destino
+ * @param argc Número de argumentos del programa
+ * @param argv Referencia a argv
+ * @param origin Referencia a la variable que almacena origen
+ * @param dest Referencia a la variable que almacena destino
+ * @param img Referencia al objeto imagen donde se guardará origen
 
-
-
-
+void ReadOrignDest(int argc, char **&argv, char *&origin, char *&dest, Image &img);
+*/
 #endif
 
 /* Fin Fichero: imagenES.h */

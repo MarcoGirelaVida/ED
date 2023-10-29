@@ -54,6 +54,7 @@ class Image{
 
          Referencia a la \ref sec_Image_A
        **/
+
 private :
 
     /**
@@ -272,7 +273,7 @@ void set_pixel (int i, int j, byte value);
      * @param width Número de columnas
      * @return Media de la sección indicada
     */
-    double Mean (int i, int j, int height, int width) const;
+    double Mean (int nrow, int ncol, int height, int width) const;
 
     // Recorre una imagen y aplica una operación sobre la misma
     //void GoAcrossAndOperate(void (*func)(int ));
@@ -288,19 +289,30 @@ void set_pixel (int i, int j, byte value);
     Image Subsample(int factor) const;
 
     // Comprueba la validez de una sección dada
-    bool ValidRow(int nrow){ return (0 <= nrow <= get_rows()); }
-    bool ValidCol(int ncol){ return (0 <= ncol <= get_cols()); }
+    bool ValidRow(int nrow) const{ return (0 <= nrow && nrow < get_rows()); }
+    bool ValidCol(int ncol) const{ return (0 <= ncol && ncol < get_cols()); }
 
     /**
      * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen
+     * @param nrow Fila inicial para recortar
+     * @param ncol Columna inicial para recortar
+     * @param height Número de filas
+     * @param width Número de columnas
+     * @return True si la sección entra dentro de la imagen
+     * @post Modifica el valor de las 
+    */
+    bool ValidSection(const int nrow, const int ncol, const int height, const int width) const;
+
+    /**
+     * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen y si no lo está modifica los valores para que lo esté
      * @param nrow Referencia a la variable que almacena la fila inicial para recortar
      * @param ncol Referencia a la variable que almacena la columna inicial para recortar
      * @param height Referencia a la variable que almacena el número de filas
      * @param width Referencia a la variable que almacena el número de columnas
-     * @return True si hay al menos un pixel de la sección que está en al imagen y modifica los valores de las variables de forma que sea
-     * @post Modifica el valor de las 
+     * @return True si la sección, tras el procesado interno, entra dentro de la imagen. (generalmente debería ser true siempre)
+     * @post Si es una sección inválida, sustituye los valores invalidos por aquellos valores más cercanos válidos
     */
-    bool ValidSection(int &nrow, int &ncol, int &height, int &width) const;
+    bool ValidSectionSmart(int &nrow, int &ncol, int &height, int &width) const;
 
     /**
      * @brief Genera una subimagen
@@ -315,12 +327,17 @@ void set_pixel (int i, int j, byte value);
 
     /**
      * @brief Genera una imagen aumentada 2x.
+     * @return Imagen aumentada 2x
+     * @post El objeto que llama a la función no se modifica
     */
     Image Zoom2X() const;
 
 
     /**
      * @brief  Baraja pseudoaleatoriamente las filas de una imagen.
+     * @pre rows < 9973
+     * @return none
+     * @post El objeto que llama al método contiene ahora una nueva imagen igual que la anterior pero con las filas ordenadas según el siguiente algoritmo: r = (r*p) mod rows
     */
     void ShuffleRows();
 } ;

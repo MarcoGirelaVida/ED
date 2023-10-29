@@ -1,4 +1,4 @@
-# Install script for directory: /home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes
+# Install script for directory: /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

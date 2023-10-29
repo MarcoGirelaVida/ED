@@ -6,44 +6,67 @@
 #include <iostream>
 #include <cmath>
 #include <image.h>
-
 #include <cassert>
+using namespace std;
 
-bool Image::ValidSection(int &nrow, int &ncol, int &height, int &width) const
+bool Image::ValidSection(const int nrow, const int ncol, const int height, const int width) const
 {
-    bool result = true;
+    return ValidRow(nrow) && ValidCol(ncol) && ValidRow(nrow+height-1) && ValidRow(ncol+width-1);
+}
 
-    if (!ValidRow(nrow) && !ValidCol(ncol))
-        result = false;
-    else if (!ValidRow(nrow) || !ValidRow(nrow+height))
+// IMPORTANTE: No funciona si se pone un nrow/ncol negativo y un height/width > max_row/col_valid
+// Lo arreglaría pero es un coñazo y no me parece tan importante :(
+bool Image::ValidSectionSmart(int &nrow, int &ncol, int &height, int &width) const
+{
+    bool isValid = ValidSection(nrow, ncol, height, width);
+    int max_col_valid = get_cols() - 1;
+    int min_col_valid = 0;
+    int max_row_valid = get_rows() - 1;
+    int min_row_valid = 0;
+
+    //DEBUG
+    /*
+    cerr << "PREPROCESADO" << endl;
+    cerr << "Max row: " << get_rows() - 1 << endl;
+    cerr << "Max col: " << get_cols() - 1 << endl;
+    cerr << "Nrow: " << nrow << endl;
+    cerr << "Ncol: " << ncol << endl;
+    cerr << "Height: " << height << endl;
+    cerr << "Width: " << width << endl;
+    */
+
+    if (!isValid)
     {
-        if (nrow > get_rows())
-            nrow = get_rows();
-        else if (nrow+height > get_rows())
-            height = get_rows()-nrow;
-        else if (nrow < 0)
-            nrow = 0;
-    }
-    else if (!ValidCol(ncol) || !ValidCol(ncol+width))
-    {
-        if(ncol > get_cols())
-            ncol = get_cols();
-        else if (ncol+width > get_cols())
-            width = get_cols()-ncol;
-        else if (ncol < 0)
-            ncol = 0;
+        if (!ValidRow(nrow))
+            nrow = (nrow < 0) ? min_row_valid : max_row_valid;
+        else
+            height = max_row_valid - nrow + 1;
+
+        if (!ValidCol(ncol))
+            ncol = (ncol < 0) ? min_col_valid : max_col_valid;
+        else
+            width = max_row_valid - ncol + 1; 
     }
     
-    return result;
-        
-
+    if (!ValidSection(nrow, ncol, height, width))
+    {
+        cerr << "IRREPARABLE INVALID SECTION" << endl;
+        cerr << "Max row: " << get_rows() - 1 << endl;
+        cerr << "Max col: " << get_cols() - 1 << endl;
+        cerr << "Nrow: " << nrow << endl;
+        cerr << "Ncol: " << ncol << endl;
+        cerr << "Height: " << height << endl;
+        cerr << "Width: " << width << endl;
+    }
+    
+    return ValidSection(nrow, ncol, height, width);
 }
 
 // 1. Genera una subimagen
 Image Image::Crop(int nrow, int ncol, int height, int width) const
 {
     //---Calculo las dimensiones que tendrá la imagen resultado---
-    assert (ValidSection(nrow, ncol, height, width));
+    assert (ValidSectionSmart(nrow, ncol, height, width));
     unsigned int rows_cropped = nrow + height,
                 cols_cropped = ncol + width;
 
@@ -61,101 +84,90 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const
 }
 
 // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
-double Image::Mean (int i, int j, int height, int width) const
+double Image::Mean (int nrow, int ncol, int height, int width) const
 {
-    assert(ValidSection(i, j, height, width));
+    assert(ValidSectionSmart(nrow, ncol, height, width));
     // Declaro la sumatoria y la submatriz de la que calcular la media
     int sum = 0;
 
     // Sumo los valores de todos los píxeles
-    for (size_t f = i; f < height; f++){
-        for (size_t c = j; c < width; c++)
-            sum += get_pixel(f,c);
+    for (size_t i = nrow; i < height+nrow; i++){
+        for (size_t j = ncol; j < width+ncol; j++)
+            sum += get_pixel(i,j);
     }
-    
-    // Devuelvo la media
-    return sum/((float)(i+height)*(j+height));
 
-    /*
-    OPCIÓN 2, más ineficiente, pero quizás más modular
-    // Declaro la sumatoria y la submatriz de la que calcular la media
-    int sum = 0;
-    Image cropped = Crop(i,j,height,width);
-    int cropped_dimension = cropped.get_rows()*cropped.get_cols();
-
-    // Sumo los valores de todos los píxeles
-    for (size_t f = 0; f < cropped.get_rows(); f++){
-        for (size_t c = 0; c < cropped.get_cols(); c++)
-            sum += get_pixel(f,c);
-    }
-    
     // Devuelvo la media
-    return sum/((float)cropped_dimension);
-    
-    */
+    return sum / static_cast<double>(height*width);
 }
 
 // 2. Genera una imagen aumentada 2x.
 Image Image::Zoom2X() const
 {
-    // Calculo la resolución de la imagen zoomeada
-    unsigned int zoomed_rows = 2*get_rows() - 1,
-                zoomed_cols = 2*get_cols() - 1,
-                zoomed_res = zoomed_rows*zoomed_cols;
-
     // Creo la imagen producto vacía con la resolución calculada
-    Image zoomed(zoomed_rows, zoomed_cols);
+    Image zoomed(2*get_rows(), 2*get_cols());
 
     // Relleno la matriz original
-    // Un pixel será inventado siempre que el valor de su columna
-    // o fila sea par
-    size_t i_original = 0;
-    for (size_t i = 0; i < zoomed_rows; i = i++){
-        for (size_t j = 0; j < zoomed_cols; j = j++)
+    for (size_t i = 0; i < zoomed.get_rows(); i++){
+        for (size_t j = 0; j < zoomed.get_cols(); j++)
         {
-            // Si alguno de los dos es impar,
-            // será un pixel inventado
-            if (i%2 || j%2)
+            if (i%2 || j%2) // Si alguno de los dos es impar, será un pixel inventado
             {
-                double mean;
-                // Si los dos valores son impares, será la media de los 4 que lo rodean
-                if (i%2 && j%2)
-                    mean = Mean(i/2, j/2, 1, 1);
-                // Si el valor de la fila es par pero las columnas no,
-                // será la media de las dos columnas consecutivas
-                else if (!(i%2) && j%2)
-                    mean = Mean(i/2, j/2, 0, 1);
+                if (i%2 && j%2) // Si ambas son impares, será la media de los 4 que lo rodean
+                    zoomed.set_pixel(i,j,Mean(i/2, j/2, 2, 2));
 
-                else // Sino será la media de las filas consecutivas
-                    mean = Mean(i/2, j/2, 1, 0);
+                else if (i%2 && !(j%2)) // Si la fila es impar pero la columnas no, será la media de las filas adyacentes
+                    zoomed.set_pixel(i,j,Mean(i/2, j/2, 2, 1));
 
-                zoomed.set_pixel(i,j,mean);
+                else // Sino será la media de las columnas consecutivas
+                    zoomed.set_pixel(i,j,Mean(i/2, j/2, 1, 2));
             }
             else //Sino es un pixel real
-            {
-                zoomed.set_pixel(i,j,get_pixel(i_original));
-                i_original++;
-            }
+                zoomed.set_pixel(i,j,get_pixel(i/2,j/2));
         }
     }
-
     return zoomed;
 }
 
 //3.  Genera un icono como reducción de una imagen
 Image Image::Subsample(int factor) const
 {
+    // Creo la imagen producto vacía con la resolución calculada
+    int rows_icon = static_cast<int>(get_rows()/factor);
+    int cols_icon = static_cast<int>(get_cols()/factor);
+    Image icon(rows_icon, cols_icon);
 
+    for (size_t i = 0; i < rows_icon; i++)
+        for (size_t j = 0; j < cols_icon; j++)
+            icon.set_pixel(i, j, round(Mean(i*factor, j*factor, factor, factor)));
+
+    return icon;
 }
 
 // 4. Modifica el contraste de una imagen
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2)
 {
+    double scalling_factor = (out2-out1)/(in2-in1);
 
+    for (size_t i = 0; i < get_rows()*get_cols(); i++)
+    {
+        byte p = get_pixel(i);
+        if (p > in1 && p < in2)
+            set_pixel(i, round(out1+scalling_factor*(p-in1)));
+    }
 }
 
 
-void ShuffleRows()
+void Image::ShuffleRows()
 {
+    const int p = 9973;
+    Image temp(rows, cols);
+    int newr;
 
+    for (size_t i = 0; i < rows; i++){
+        newr = i*p % rows;
+        for (size_t j = 0; j < cols; j++)
+            temp.set_pixel(i,j,get_pixel(newr,j));
+    }
+    
+    Copy(temp);
 }

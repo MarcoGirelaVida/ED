@@ -7,8 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/CMakeLists.txt"
-  "/home/marco/Drive/Proyectos/ED/Practices/P2/ej01_imagenes/Doxyfile.in"
+  "/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeLists.txt"
   "CMakeFiles/3.27.7/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.7/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.7/CMakeSystem.cmake"
@@ -123,7 +122,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.27.7/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.7/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.7/CMakeCXXCompiler.cmake"
-  "Doxyfile"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -131,5 +129,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/image.dir/DependInfo.cmake"
   "CMakeFiles/negativo.dir/DependInfo.cmake"
-  "CMakeFiles/doc_doxygen.dir/DependInfo.cmake"
+  "CMakeFiles/subimagen.dir/DependInfo.cmake"
+  "CMakeFiles/zoom.dir/DependInfo.cmake"
+  "CMakeFiles/icono.dir/DependInfo.cmake"
+  "CMakeFiles/contraste.dir/DependInfo.cmake"
+  "CMakeFiles/barajar.dir/DependInfo.cmake"
   )

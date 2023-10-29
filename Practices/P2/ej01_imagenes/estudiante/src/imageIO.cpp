@@ -5,14 +5,11 @@
   * Permite la E/S de archivos de tipo PGM,PPM
   *
   */
-
 #include <string>
-
-#include <imageIO.h>
-
+#include <iostream>
 #include <fstream>
+#include <imageIO.h>
 using namespace std;
-
 
 ImageKind ReadKind(ifstream& f){
   char c1,c2;
@@ -113,6 +110,39 @@ bool WritePGMImage (const char *nombre, const unsigned char *datos,
   return res;
 }
 
+/*
+// Lee los dos priemros argumentos de un programa y los almacena como origen y destino
+void ReadOrignDest(int argc, char **&argv, char *&origin, char *&dest, Image &img)
+{
+  // Comprobar validez de la llamada
+  if (argc >= 3){
+    cerr << "Error: Numero incorrecto de parametros.\n";
+    cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
+    exit (1);
+  }
 
+  // Obtener argumentos
+  origin  = argv[1];
+  dest = argv[2];
+
+  // Mostramos argumentos
+  cout << endl;
+  cout << "Fichero origen: " << origin << endl;
+  cout << "Fichero resultado: " << dest << endl;
+
+  // Leer la imagen del fichero de entrada
+  if (!img.Load(origin)){
+    cerr << "Error: No pudo leerse la imagen." << endl;
+    cerr << "Terminando la ejecucion del programa." << endl;
+    exit(1);
+  }
+
+  // Mostrar los parametros de la Imagen
+  cout << endl;
+  cout << "Dimensiones de " << origin << ":" << endl;
+  cout << "   Imagen   = " << img.get_rows()  << " filas x " << img.get_cols() << " columnas " << endl;
+
+}
+*/
 /* Fin Fichero: imagenES.cpp */
 
