@@ -263,7 +263,7 @@ void set_pixel (int i, int j, byte value);
      * @pre out1 < out2
      * @post El objetivo que llama a la función es modificado
     */
-    void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
+    void AdjustContrast (const byte in1, const byte in2, const byte out1, const byte out2);
 
     /**
      * @brief Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
@@ -286,11 +286,21 @@ void set_pixel (int i, int j, byte value);
      * @post La imagen no se modifica
      * @post La imagen resultante tendrá tamaño int(filas/factor) X int(columnas/factor). Descartando los decimales de la división
     */
-    Image Subsample(int factor) const;
+    Image Subsample(const int factor) const;
 
-    // Comprueba la validez de una sección dada
-    bool ValidRow(int nrow) const{ return (0 <= nrow && nrow < get_rows()); }
-    bool ValidCol(int ncol) const{ return (0 <= ncol && ncol < get_cols()); }
+    /**
+     * @brief Comprueba la validez de una fila dada
+     * @param nrow Fila de la que se quiere comprobar la validez
+     * @return @p true si la fila dada está dentro de la imagen, @p false en caso contrario
+    */
+    bool ValidRow(const int nrow) const{ return (0 <= nrow && nrow < get_rows()); }
+
+    /**
+     * @brief Comprueba la validez de una columna dada
+     * @param nrow Columna de la que se quiere comprobar la validez
+     * @return @p true si la columna dada está dentro de la imagen, @p false en caso contrario
+    */
+    bool ValidCol(const int ncol) const{ return (0 <= ncol && ncol < get_cols()); }
 
     /**
      * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen
@@ -299,7 +309,6 @@ void set_pixel (int i, int j, byte value);
      * @param height Número de filas
      * @param width Número de columnas
      * @return True si la sección entra dentro de la imagen
-     * @post Modifica el valor de las 
     */
     bool ValidSection(const int nrow, const int ncol, const int height, const int width) const;
 
@@ -322,6 +331,7 @@ void set_pixel (int i, int j, byte value);
      * @param width Número de columnas
      * @return Imagen con el recorte
      * @post El objeto que llama a la función no se modifica
+     * @post Si se proporciona unos datos correspondientes a una sección inválida de la imagen, se reajustaran para ser válidos
     */
     Image Crop(int nrow, int ncol, int height, int width) const;
 

@@ -207,6 +207,19 @@ barajar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/build
 .PHONY : barajar/fast
 
+#=============================================================================
+# Target rules for targets named doc_doxygen
+
+# Build rule for target.
+doc_doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
+
+# fast build rule for target.
+doc_doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
+
 estudiante/src/barajar.o: estudiante/src/barajar.cpp.o
 .PHONY : estudiante/src/barajar.o
 
@@ -431,6 +444,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... doc_doxygen"
 	@echo "... barajar"
 	@echo "... contraste"
 	@echo "... icono"

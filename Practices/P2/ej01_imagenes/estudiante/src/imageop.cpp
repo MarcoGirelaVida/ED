@@ -19,10 +19,9 @@ bool Image::ValidSection(const int nrow, const int ncol, const int height, const
 bool Image::ValidSectionSmart(int &nrow, int &ncol, int &height, int &width) const
 {
     bool isValid = ValidSection(nrow, ncol, height, width);
-    int max_col_valid = get_cols() - 1;
-    int min_col_valid = 0;
-    int max_row_valid = get_rows() - 1;
-    int min_row_valid = 0;
+    const int max_col_valid = get_cols() - 1;
+    const int max_row_valid = get_rows() - 1;
+    const int min_valid = 0;
 
     //DEBUG
     /*
@@ -38,16 +37,17 @@ bool Image::ValidSectionSmart(int &nrow, int &ncol, int &height, int &width) con
     if (!isValid)
     {
         if (!ValidRow(nrow))
-            nrow = (nrow < 0) ? min_row_valid : max_row_valid;
+            nrow = (nrow < 0) ? min_valid : max_row_valid;
         else
             height = max_row_valid - nrow + 1;
 
         if (!ValidCol(ncol))
-            ncol = (ncol < 0) ? min_col_valid : max_col_valid;
+            ncol = (ncol < 0) ? min_valid : max_col_valid;
         else
             width = max_row_valid - ncol + 1; 
     }
     
+    // Si la sección sigue siendo erronea avisa y proporciona los valores por los que es erronea
     if (!ValidSection(nrow, ncol, height, width))
     {
         cerr << "IRREPARABLE INVALID SECTION" << endl;
@@ -73,12 +73,10 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const
     // Creo la imagen que contedrá la imagen recortada
     Image cropped_image(rows_cropped, cols_cropped);
 
-    // Copio los datos del segmento de la imagen original a la
-    // imagen recortada.
-    for (size_t i = 0; i < rows_cropped; i++){
+    // Copio los datos del segmento de la imagen original a la recortada.
+    for (size_t i = 0; i < rows_cropped; i++)
         for (size_t j = 0; j < cols_cropped; j++)
             cropped_image.set_pixel(i, j, get_pixel(i+nrow,j+ncol));
-    }
     
     return cropped_image;
 }
@@ -87,14 +85,13 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const
 double Image::Mean (int nrow, int ncol, int height, int width) const
 {
     assert(ValidSectionSmart(nrow, ncol, height, width));
-    // Declaro la sumatoria y la submatriz de la que calcular la media
+    // Declaro la sumatoria
     int sum = 0;
 
     // Sumo los valores de todos los píxeles
-    for (size_t i = nrow; i < height+nrow; i++){
+    for (size_t i = nrow; i < height+nrow; i++)
         for (size_t j = ncol; j < width+ncol; j++)
             sum += get_pixel(i,j);
-    }
 
     // Devuelvo la media
     return sum / static_cast<double>(height*width);
@@ -129,11 +126,11 @@ Image Image::Zoom2X() const
 }
 
 //3.  Genera un icono como reducción de una imagen
-Image Image::Subsample(int factor) const
+Image Image::Subsample(const int factor) const
 {
     // Creo la imagen producto vacía con la resolución calculada
-    int rows_icon = static_cast<int>(get_rows()/factor);
-    int cols_icon = static_cast<int>(get_cols()/factor);
+    int rows_icon = static_cast<int>(get_rows()/factor),
+        cols_icon = static_cast<int>(get_cols()/factor);
     Image icon(rows_icon, cols_icon);
 
     for (size_t i = 0; i < rows_icon; i++)
@@ -143,17 +140,14 @@ Image Image::Subsample(int factor) const
     return icon;
 }
 
-// 4. Modifica el contraste de una imagen
-void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2)
+// 4. Modifica el contrasteloadAndcheckImage de una imagen
+void Image::AdjustContrast(const byte in1, const byte in2, const byte out1, const byte out2)
 {
     double scalling_factor = (out2-out1)/(in2-in1);
 
-    for (size_t i = 0; i < get_rows()*get_cols(); i++)
-    {
-        byte p = get_pixel(i);
-        if (p > in1 && p < in2)
-            set_pixel(i, round(out1+scalling_factor*(p-in1)));
-    }
+    for (size_t i = 0; i < size(); i++)
+        if (get_pixel(i) > in1 && get_pixel(i) < in2)
+            set_pixel(i, round(out1+scalling_factor*(get_pixel(i)-in1)));
 }
 
 

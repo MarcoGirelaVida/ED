@@ -1,0 +1,7 @@
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/image.dir
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/pruebarotacion.dir
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/pruebapegado.dir
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/ruta_aerea.dir
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/doc_doxygen.dir
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/edit_cache.dir
+/home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/CMakeFiles/rebuild_cache.dir

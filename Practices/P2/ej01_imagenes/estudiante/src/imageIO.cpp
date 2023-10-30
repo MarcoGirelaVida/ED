@@ -110,17 +110,18 @@ bool WritePGMImage (const char *nombre, const unsigned char *datos,
   return res;
 }
 
-/*
-// Lee los dos priemros argumentos de un programa y los almacena como origen y destino
-void ReadOrignDest(int argc, char **&argv, char *&origin, char *&dest, Image &img)
+void checkArgumentsCount(const int numarg, const int &argc)
 {
   // Comprobar validez de la llamada
-  if (argc >= 3){
+  if (argc != numarg){
     cerr << "Error: Numero incorrecto de parametros.\n";
     cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
     exit (1);
   }
+}
 
+void loadAndShowFileNames(char **&argv, char*&origin, char*&dest)
+{
   // Obtener argumentos
   origin  = argv[1];
   dest = argv[2];
@@ -129,20 +130,39 @@ void ReadOrignDest(int argc, char **&argv, char *&origin, char *&dest, Image &im
   cout << endl;
   cout << "Fichero origen: " << origin << endl;
   cout << "Fichero resultado: " << dest << endl;
+}
 
+void loadAndcheckImage(char *&origin, Image &img)
+{
   // Leer la imagen del fichero de entrada
   if (!img.Load(origin)){
     cerr << "Error: No pudo leerse la imagen." << endl;
     cerr << "Terminando la ejecucion del programa." << endl;
     exit(1);
   }
+}
+
+void showImageDimensions(Image &img)
+{
+  cout << "Imagen   = " << img.get_rows()  << " filas x " << img.get_cols() << " columnas " << endl;
+}
+
+// Lee los dos priemros argumentos de un programa y los almacena como origen y destino
+void processArgumentsAndLoadImage(const int &argc, char **&argv, char *&origin, char *&dest, Image &img, const int numarg)
+{
+  // Comprobar validez de la llamada
+  checkArgumentsCount(numarg, argc);
+
+  // Cargo los argumentos en las variables origin y main
+  loadAndShowFileNames(argv, origin, dest);
+
+  //Leo la imagen del fichero de entrada
+  loadAndcheckImage(origin, img);
 
   // Mostrar los parametros de la Imagen
-  cout << endl;
-  cout << "Dimensiones de " << origin << ":" << endl;
-  cout << "   Imagen   = " << img.get_rows()  << " filas x " << img.get_cols() << " columnas " << endl;
-
+  cout << endl << "Dimensiones de " << origin << ":" << endl;
+  showImageDimensions(img);
 }
-*/
+
 /* Fin Fichero: imagenES.cpp */
 

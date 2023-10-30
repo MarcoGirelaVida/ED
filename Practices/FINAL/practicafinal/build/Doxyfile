@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica Final: Rutas Aereas"
+OUTPUT_DIRECTORY       = /home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/build/doc_doxygen/
+INPUT                  = /home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/rutas_aereas/include /home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/rutas_aereas/src /home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/rutas_aereas/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/marco/Repos/Practicas/ED/Practices/FINAL/practicafinal/rutas_aereas/doc
+EXTRACT_PRIVATE        = NO

@@ -70,6 +70,7 @@ all: CMakeFiles/zoom.dir/all
 all: CMakeFiles/icono.dir/all
 all: CMakeFiles/contraste.dir/all
 all: CMakeFiles/barajar.dir/all
+all: CMakeFiles/doc_doxygen.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -84,6 +85,7 @@ clean: CMakeFiles/zoom.dir/clean
 clean: CMakeFiles/icono.dir/clean
 clean: CMakeFiles/contraste.dir/clean
 clean: CMakeFiles/barajar.dir/clean
+clean: CMakeFiles/doc_doxygen.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -93,7 +95,7 @@ clean: CMakeFiles/barajar.dir/clean
 CMakeFiles/image.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=7,8,9,10 "Built target image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=8,9,10,11 "Built target image"
 .PHONY : CMakeFiles/image.dir/all
 
 # Build rule for subdir invocation for target.
@@ -119,7 +121,7 @@ CMakeFiles/image.dir/clean:
 CMakeFiles/negativo.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=11,12 "Built target negativo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=12,13 "Built target negativo"
 .PHONY : CMakeFiles/negativo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -145,7 +147,7 @@ CMakeFiles/negativo.dir/clean:
 CMakeFiles/subimagen.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=13,14 "Built target subimagen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=14,15 "Built target subimagen"
 .PHONY : CMakeFiles/subimagen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -171,7 +173,7 @@ CMakeFiles/subimagen.dir/clean:
 CMakeFiles/zoom.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=15,16 "Built target zoom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=16,17 "Built target zoom"
 .PHONY : CMakeFiles/zoom.dir/all
 
 # Build rule for subdir invocation for target.
@@ -197,7 +199,7 @@ CMakeFiles/zoom.dir/clean:
 CMakeFiles/icono.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=5,6 "Built target icono"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=6,7 "Built target icono"
 .PHONY : CMakeFiles/icono.dir/all
 
 # Build rule for subdir invocation for target.
@@ -267,6 +269,32 @@ barajar: CMakeFiles/barajar.dir/rule
 CMakeFiles/barajar.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/clean
 .PHONY : CMakeFiles/barajar.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/doc_doxygen.dir
+
+# All Build rule for target.
+CMakeFiles/doc_doxygen.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles --progress-num=5 "Built target doc_doxygen"
+.PHONY : CMakeFiles/doc_doxygen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/doc_doxygen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doc_doxygen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/build/CMakeFiles 0
+.PHONY : CMakeFiles/doc_doxygen.dir/rule
+
+# Convenience name for target.
+doc_doxygen: CMakeFiles/doc_doxygen.dir/rule
+.PHONY : doc_doxygen
+
+# clean rule for target.
+CMakeFiles/doc_doxygen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/clean
+.PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

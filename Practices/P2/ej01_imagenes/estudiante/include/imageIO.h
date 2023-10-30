@@ -9,6 +9,8 @@
 #ifndef _IMAGEN_ES_H_
 #define _IMAGEN_ES_H_
 
+#include <iostream>
+#include <image.h>
 /**
   * @brief Tipo de imagen
   *
@@ -56,7 +58,7 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
   */
 bool WritePGMImage (const char *path, const unsigned char *datos,
                     const int rows, const int cols);
-/*
+
 /**
  * @brief Lee los dos primeros argumentos de un programa y los procesa como imagen origen y destino
  * @param argc Número de argumentos del programa
@@ -64,9 +66,10 @@ bool WritePGMImage (const char *path, const unsigned char *datos,
  * @param origin Referencia a la variable que almacena origen
  * @param dest Referencia a la variable que almacena destino
  * @param img Referencia al objeto imagen donde se guardará origen
-
-void ReadOrignDest(int argc, char **&argv, char *&origin, char *&dest, Image &img);
+ * @param numarg Número de argumentos que el usuario espera que tenga una llamada
 */
+void processArgumentsAndLoadImage(int argc, char **&argv, char *&origin, char *&dest, Image &img, int numarg = 3);
+
 #endif
 
 /* Fin Fichero: imagenES.h */
