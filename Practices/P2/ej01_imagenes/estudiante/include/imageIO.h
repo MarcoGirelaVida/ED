@@ -5,12 +5,13 @@
   * Permite la E/S de archivos de tipo PGM,PPM
   *
   */
+#include <iostream>
+#include <image.h>
+using namespace std;
 
 #ifndef _IMAGEN_ES_H_
 #define _IMAGEN_ES_H_
 
-#include <iostream>
-#include <image.h>
 /**
   * @brief Tipo de imagen
   *
@@ -59,7 +60,7 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
 bool WritePGMImage (const char *path, const unsigned char *datos,
                     const int rows, const int cols);
 
-/**
+/*
  * @brief Lee los dos primeros argumentos de un programa y los procesa como imagen origen y destino
  * @param argc Número de argumentos del programa
  * @param argv Referencia a argv
@@ -67,9 +68,9 @@ bool WritePGMImage (const char *path, const unsigned char *datos,
  * @param dest Referencia a la variable que almacena destino
  * @param img Referencia al objeto imagen donde se guardará origen
  * @param numarg Número de argumentos que el usuario espera que tenga una llamada
-*/
-void processArgumentsAndLoadImage(int argc, char **&argv, char *&origin, char *&dest, Image &img, int numarg = 3);
 
+void processArgumentsAndLoadImage(int argc, char **&argv, char *&origin, char *&dest, Image &img, int numarg = 3);
+*/
 #endif
 
 /* Fin Fichero: imagenES.h */

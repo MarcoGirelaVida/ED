@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/doc_doxygen/
+INPUT                  = /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/estudiante/include /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/estudiante/src /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/estudiante/doc
+EXTRACT_PRIVATE        = NO

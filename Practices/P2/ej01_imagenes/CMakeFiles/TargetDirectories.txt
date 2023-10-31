@@ -5,5 +5,6 @@
 /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeFiles/icono.dir
 /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeFiles/contraste.dir
 /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeFiles/barajar.dir
+/home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeFiles/doc_doxygen.dir
 /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeFiles/edit_cache.dir
 /home/marco/Repos/Practicas/ED/Practices/P2/ej01_imagenes/CMakeFiles/rebuild_cache.dir
