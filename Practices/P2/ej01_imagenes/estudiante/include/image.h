@@ -1,6 +1,6 @@
-/*!
+/**
  * @file image.h
- * @brief Cabecera para la clase Image
+ * @brief Cabecera para la clase Image  
  */
 
 #ifndef _IMAGEN_H_
@@ -11,9 +11,14 @@
 #include "imageIO.h"
 
 
-
+/**
+ * @brief Tipo de dato "byte" compuesto por un tipo de dato 'char'
+*/
 typedef unsigned char byte;
 
+/**
+ * @brief Struct que determina el resultado de una lectura de una imagen PGM
+*/
 enum LoadResult: unsigned char {
     SUCCESS,
     NOT_PGM,
@@ -43,16 +48,24 @@ class Image{
     /**
          @page page_repImagen Representación del TDA Imagen
 
-         @section sec_Image_A Título A
+         @section sec_Image_A Representación Tipo 1 (Actual)
+          Dada una imagen de f filas y c columnas, está representada por:
+         - _byte ** img_: Un puntero a un vector de punteros (Representa a la imagen completa)
+         - _byte * filas[f]_ : Un vector con f punteros a bytes
+         - _byte * m[f*c]_ : Un macro vector que almacena todos los bytes de la imagen secuencialmente
 
+         Esta representación es preferible en aquellos casos en los que necesitamos operaciones que se apliquen secuencialmente sobre todos los píxeles de una imagen.
+         @image html rep1.png "Rep 1"
 
-         Contenido de la sección A.
+         @section sec_Image_B Representación Tipo 2 (ej Barajar)
+          Dada una imagen de f filas y c columnas, está representada por:
+         - _byte ** img_ : Un puntero a un vector de punteros (La imagen completa)
+         - _byte * filas[f]_ : Un vector con f punteros a vectores de píxeles (bytes)
+         - _f byte * col[c]_ : f vectores de píxeles (bytes) con tamaño c (esto será cada columna)
 
-         @section sec_Image_B Título  B
+         Esta representación es preferible en aquellos casos en los que hagamos operaciones directas sobre el orden de las filas de la imagen.
+         @image html rep2.png "Rep 2"
 
-         Contenido de la sección B.
-
-         Referencia a la \ref sec_Image_A
        **/
 
 private :
@@ -190,18 +203,18 @@ public :
       */
     int size() const;
 
-/**
-  * @brief Asigna el valor valor al píxel (@p i, @p j) de la imagen.
-  * @param i Fila de la imagen en la que se encuentra el píxel a escribir .
-  * @param j Columna de la imagen en la que se encuentra el píxel a escribir.
-  * @param value Valor que se escribirá en el píxel (@p i, @p j) .
-  * @pre O <= @p i < get_rows()
-  * @pre O <= @p j < get_cols()
-  * @pre O <= @p value <= 255
-  * @post El píxel (@p i, @p j) de la imagen se modificará y contendrá valor @p value.
-  * Los demás píxeles permanecerán iguales.
-  */
-void set_pixel (int i, int j, byte value);
+    /**
+    * @brief Asigna el valor valor al píxel (@p i, @p j) de la imagen.
+    * @param i Fila de la imagen en la que se encuentra el píxel a escribir .
+    * @param j Columna de la imagen en la que se encuentra el píxel a escribir.
+    * @param value Valor que se escribirá en el píxel (@p i, @p j) .
+    * @pre O <= @p i < get_rows()
+    * @pre O <= @p j < get_cols()
+    * @pre O <= @p value <= 255
+    * @post El píxel (@p i, @p j) de la imagen se modificará y contendrá valor @p value.
+    * Los demás píxeles permanecerán iguales.
+    */
+    void set_pixel (int i, int j, byte value);
 
     /**
       * @brief Consulta el valor del píxel (fil, col) de la imagen.
@@ -249,7 +262,10 @@ void set_pixel (int i, int j, byte value);
       */
     bool Load (const char * file_path);
 
-    // Invierte
+    /**
+    * @brief Invierte los colores de una imagen
+    * @post El objeto que llama a la función queda modificado por completo con sus sus tonalidades invertidas
+    */
     void Invert();
 
     /**
@@ -297,7 +313,7 @@ void set_pixel (int i, int j, byte value);
 
     /**
      * @brief Comprueba la validez de una columna dada
-     * @param nrow Columna de la que se quiere comprobar la validez
+     * @param ncol Columna de la que se quiere comprobar la validez
      * @return @p true si la columna dada está dentro de la imagen, @p false en caso contrario
     */
     bool ValidCol(const int ncol) const{ return (0 <= ncol && ncol < get_cols()); }
@@ -313,13 +329,18 @@ void set_pixel (int i, int j, byte value);
     bool ValidSection(const int nrow, const int ncol, const int height, const int width) const;
 
     /**
-     * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen y si no lo está modifica los valores para que lo esté
+     * @brief Comprueba que la sección proporcionada se encuentra dentro de la imagen y si no lo está, a ser posible, los modificará para que lo estén
      * @param nrow Referencia a la variable que almacena la fila inicial para recortar
      * @param ncol Referencia a la variable que almacena la columna inicial para recortar
      * @param height Referencia a la variable que almacena el número de filas
      * @param width Referencia a la variable que almacena el número de columnas
-     * @return True si la sección, tras el procesado interno, entra dentro de la imagen. (generalmente debería ser true siempre)
-     * @post Si es una sección inválida, sustituye los valores invalidos por aquellos valores más cercanos válidos
+     * @retval True si la sección era válida o si ha sido posible modificar los valores para que lo sea.
+     * @retval False si la sección es inválida y no ha sido posible modificarla para deje de serlo.
+     * @post Si @p nrow > filas --> @p nrow = filas
+     * @post Si @p height + @p nrow > filas -> @p height = filas-nrow
+     * @post Si @p ncol > columnas --> @p ncol = columnas
+     * @post Si @p width + @p ncol > columnas -->  @p width = columnas-ncol
+     * @note No será capaz de arreglar la sección si @p nrow && @p height son valores inválidos ( @ref ValidRow "ValidRow") o @p ncol && @p width son valores inválidos ( @ref ValidCol "ValidCol")
     */
     bool ValidSectionSmart(int &nrow, int &ncol, int &height, int &width) const;
 
@@ -329,15 +350,19 @@ void set_pixel (int i, int j, byte value);
      * @param ncol Columna inicial para recortar
      * @param height Número de filas
      * @param width Número de columnas
+     * @pre 0 <= @p nrow < filas
+     * @pre 0 <= @p ncol < columnas
+     * @pre 0 <= @p height and @p height + @p nrow <= filas
+     * @pre 0 <= @p width and @p width + @p ncol <= columnas
+     * @note Si uno o varios parámetros no cumplen los requisitos se modificarán conforme la función @ref ValidSectionSmart "ValidSectionSmart"
      * @return Imagen con el recorte
      * @post El objeto que llama a la función no se modifica
-     * @post Si se proporciona unos datos correspondientes a una sección inválida de la imagen, se reajustaran para ser válidos
     */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     /**
      * @brief Genera una imagen aumentada 2x.
-     * @return Imagen aumentada 2x
+     * @return Misma imagen con el doble de resolución
      * @post El objeto que llama a la función no se modifica
     */
     Image Zoom2X() const;
@@ -346,8 +371,9 @@ void set_pixel (int i, int j, byte value);
     /**
      * @brief  Baraja pseudoaleatoriamente las filas de una imagen.
      * @pre rows < 9973
-     * @return none
-     * @post El objeto que llama al método contiene ahora una nueva imagen igual que la anterior pero con las filas ordenadas según el siguiente algoritmo: r = (r*p) mod rows
+     * @post El objeto que llama al método contiene ahora una nueva imagen igual que la anterior pero con las filas ordenadas según el siguiente algoritmo: 𝑟^= (𝑟*𝑝) mod rows.  
+     * Donde 𝑟 es el nuevo índice de la fila 𝑟, 𝑝 es un coprimo de rows, y rows es el número de filas de la imagen. (Dos números son  coprimos si no tienen ningún factor primo en común, por simplicidad usaremos 9973 como número primo por defecto)
+     * @note Sin terminar
     */
     void ShuffleRows();
 } ;

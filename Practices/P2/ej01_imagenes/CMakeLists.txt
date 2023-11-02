@@ -1,8 +1,14 @@
 cmake_minimum_required(VERSION 3.16)
-project(practica2)
+project(Practica1_Imagenes)
 
 set(CMAKE_CXX_STANDARD 14)
 set(BASE_FOLDER estudiante)
+# Set the output directory for all executables
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${BASE_FOLDER}/bin")
+# Set the output directory for all libraries
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BASE_FOLDER}/lib")
+
+
 
 include_directories(${BASE_FOLDER}/include)
 #add_library(imageio ${BASE_FOLDER}/src/imageio.cpp)

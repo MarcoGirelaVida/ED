@@ -1,6 +1,7 @@
-// Fichero: zoom.cpp
-// Hace el zoom X2 de una imagen PGM
-//
+/**
+ * @file zoom.cpp
+ * @brief Amplía por dos la resolución de una sección de una imagen dada
+*/
 
 #include <iostream>
 #include <cstring>

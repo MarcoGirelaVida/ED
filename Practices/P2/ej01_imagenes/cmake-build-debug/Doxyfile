@@ -1,6 +1,0 @@
-PROJECT_NAME           = "Práctica 1. Imágenes"
-OUTPUT_DIRECTORY       = /mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/cmake-build-debug/doc_doxygen/
-INPUT                  = /mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/include /mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/src /mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/doc
-GENERATE_LATEX         = NO
-IMAGE_PATH             = /mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej01_imagenes/profesor/doc
-EXTRACT_PRIVATE        = NO

@@ -1,6 +1,7 @@
-// Fichero: contraste.cpp
-// Ajusta el contraste de una imagen
-//
+/**
+ * @file contraste.cpp
+ * @brief Ajusta el contraste de una imagen
+*/
 
 #include <iostream>
 #include <cstring>

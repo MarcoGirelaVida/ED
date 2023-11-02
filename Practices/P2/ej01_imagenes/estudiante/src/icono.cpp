@@ -1,6 +1,7 @@
-// Fichero: icono.cpp
-// Crea una imagen a partir de otra con un factor de reducción
-//
+/**
+ * @file icono.cpp
+ * @brief Genera un icono a partir de una imagen dada reducida por un factor de reducción dado
+*/
 
 #include <iostream>
 #include <cstring>

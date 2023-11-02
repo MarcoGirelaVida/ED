@@ -1,6 +1,7 @@
-// Fichero: negativo.cpp
-// Calcula el negativo de una imagen PGM
-//
+/**
+ * @file negativo.cpp
+ * @brief Calcula el negativo de una imagen PGM
+*/
 
 #include <iostream>
 #include <cstring>
