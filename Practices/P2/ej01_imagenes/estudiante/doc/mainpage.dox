@@ -130,10 +130,17 @@ Ajusta el contraste de una imagen dada
 
 ## Barajar {#Barajar}
 
-Coming soon...
+### Barajar
+Calcula el tiempo que tarda en barajar las filas de una imagen con las dimensiones dadas
 
+> __barajar__ \<nrow\> \<ncol\>
 
+@param <nrow> Número de filas de la imagen de prueba
+@param <ncol> Número de columnas de la imagen de prueba
 
+@image html grafica grafica_datos100f_100c.png "Gráfica de tiempos de ejecución de barajar con 100 filas y 100 columnas"
+
+## 
 # Autores
 Los autores de esta práctica son:
 - **Marco Girela Vida, Grupo B3**

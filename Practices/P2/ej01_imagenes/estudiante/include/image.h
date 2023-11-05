@@ -204,14 +204,14 @@ public :
     int size() const;
 
     /**
-    * @brief Asigna el valor valor al píxel (@p i, @p j) de la imagen.
+    * @brief Asigna el valor valor al píxel ( @p i, @p j) de la imagen.
     * @param i Fila de la imagen en la que se encuentra el píxel a escribir .
     * @param j Columna de la imagen en la que se encuentra el píxel a escribir.
-    * @param value Valor que se escribirá en el píxel (@p i, @p j) .
+    * @param value Valor que se escribirá en el píxel ( @p i, @p j) .
     * @pre O <= @p i < get_rows()
     * @pre O <= @p j < get_cols()
     * @pre O <= @p value <= 255
-    * @post El píxel (@p i, @p j) de la imagen se modificará y contendrá valor @p value.
+    * @post El píxel ( @p i, @p j) de la imagen se modificará y contendrá valor @p value.
     * Los demás píxeles permanecerán iguales.
     */
     void set_pixel (int i, int j, byte value);
@@ -231,6 +231,7 @@ public :
       * @brief Consulta el valor del píxel k de la imagen desenrrollada.
       * @param k Índice del píxel
       * @pre 0 <= k < filas*columnas
+      * @return el valor del píxel contenido en (k/filas,k%filas)
       * @post La imagen no se modifica.
       */
     byte get_pixel (int k) const;

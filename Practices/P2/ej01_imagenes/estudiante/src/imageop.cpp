@@ -67,18 +67,16 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const
 {
     //---Calculo las dimensiones que tendrá la imagen resultado---
     assert (ValidSectionSmart(nrow, ncol, height, width));
-    unsigned int rows_cropped = nrow + height,
-                cols_cropped = ncol + width;
 
-    // Creo la imagen que contedrá la imagen recortada
-    Image cropped_image(rows_cropped, cols_cropped);
+    // Creamos una imagen auxiliar donde alojaremos la imagen recortada
+    Image aux = Image(height, width, 0);
 
-    // Copio los datos del segmento de la imagen original a la recortada.
-    for (size_t i = 0; i < rows_cropped; i++)
-        for (size_t j = 0; j < cols_cropped; j++)
-            cropped_image.set_pixel(i, j, get_pixel(i+nrow,j+ncol));
-    
-    return cropped_image;
+    for (int i=0; i < height; i++)
+        for (int j=0; j < width; j++)
+            aux.set_pixel(i,j,get_pixel(nrow+i,ncol+j));
+
+    return aux;
+
 }
 
 // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
@@ -154,13 +152,15 @@ void Image::AdjustContrast(const byte in1, const byte in2, const byte out1, cons
 void Image::ShuffleRows()
 {
     const int p = 9973;
+    byte * tmprow = new byte[get_cols()];
     Image temp(rows, cols);
     int newr;
 
     for (size_t i = 0; i < rows; i++){
         newr = i*p % rows;
-        for (size_t j = 0; j < cols; j++)
-            temp.set_pixel(i,j,get_pixel(newr,j));
+        tmprow = img[rows];
+        img[rows] = img[newr];
+        img[newr] = tmprow;
     }
     
     Copy(temp);
