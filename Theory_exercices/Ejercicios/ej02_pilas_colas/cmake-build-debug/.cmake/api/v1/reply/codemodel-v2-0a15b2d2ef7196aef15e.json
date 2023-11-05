@@ -1,0 +1,95 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p03_pilas_colas",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cola_max::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cola_max-Debug-d9589c038c674d0b22da.json",
+					"name" : "cola_max",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc_doxygen-Debug-f48eee391dfb7e498caa.json",
+					"name" : "doc_doxygen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "maxqueue::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-maxqueue-Debug-37a01d484fab543affa6.json",
+					"name" : "maxqueue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "maxstack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-maxstack-Debug-3d82514eeae6033ce80b.json",
+					"name" : "maxstack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pila_max::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pila_max-Debug-843a6e1fe8437dd467c7.json",
+					"name" : "pila_max",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej02_pilas_colas/cmake-build-debug",
+		"source" : "/mnt/d/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej02_pilas_colas"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
