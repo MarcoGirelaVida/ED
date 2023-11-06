@@ -4,6 +4,10 @@ project(p03_pilas_colas)
 set(CMAKE_CXX_STANDARD 14)
 
 set(BASE_FOLDER estudiante)
+# Set the output directory for all executables
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${BASE_FOLDER}/bin")
+# Set the output directory for all libraries
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BASE_FOLDER}/lib")
 
 include_directories(${BASE_FOLDER}/include)
 add_library(maxstack ${BASE_FOLDER}/src/maxstack.cpp)

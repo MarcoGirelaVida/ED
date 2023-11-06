@@ -1,0 +1,7 @@
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/maxstack.dir
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/maxqueue.dir
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/pila_max.dir
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/cola_max.dir
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/doc_doxygen.dir
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/edit_cache.dir
+/home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/CMakeFiles/rebuild_cache.dir

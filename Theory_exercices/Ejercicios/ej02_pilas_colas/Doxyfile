@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 2. Pilas y Colas"
+OUTPUT_DIRECTORY       = /home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/doc_doxygen/
+INPUT                  = /home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/estudiante/include /home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/estudiante/src /home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/marco/Repos/Practicas/ED/Theory_exercices/Ejercicios/ej02_pilas_colas/estudiante/doc
+EXTRACT_PRIVATE	       = NO
