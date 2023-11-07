@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="p03_pilas_colas" targetName="cola_max" />
+      <config projectName="p03_pilas_colas" targetName="maxqueue" />
+      <config projectName="p03_pilas_colas" targetName="maxstack" />
+      <config projectName="p03_pilas_colas" targetName="pila_max" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1fc78919-bfb2-4f43-9b3a-6fa479df4598" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/ej01_imagenes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/ej01_imagenes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/ej02_pilas_colas.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/ej02_pilas_colas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/ej03_tdas_letras.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/ej03_tdas_letras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/ej04_juego_letras.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/ej04_juego_letras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/assignments/test_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/assignments/test_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/corrector.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/corrector.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/corrector.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/corrector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/handlers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/handlers/comments_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/handlers/comments_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/handlers/context_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/handlers/context_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/handlers/execution_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/handlers/execution_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrector/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrector/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/fastapi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/fastapi/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/fastapi/fastapi.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/fastapi/fastapi.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/judge0/judge0.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/judge0/judge0.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/compile" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/compile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pri1.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pri1.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pri2.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pri2.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pri3.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pri3.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/contraste_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/icono_pri1.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/icono_pri1.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/icono_pri2.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/icono_pri2.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/icono_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/icono_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/negativo_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/negativo_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/original_9973.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/original_9973.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri1.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri1.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri2.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri2.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri3.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri3.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri4.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pri4.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/subimagen_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri1.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri1.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri2.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri2.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri3.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri3.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri4.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pri4.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/expected/zoom_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/img/board.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/img/board.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/img/shuffle_9973.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/img/shuffle_9973.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/img/vacas.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/img/vacas.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/run" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej01_imagenes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej01_imagenes/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/README" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/run" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej02_pilas_colas/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/dictionary_pub.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/dictionary_pub.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras_mini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras_pri.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras_pri.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/data/letras_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/juez.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/juez.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/run" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej03_tdas_letras/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/diccionario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/diccionario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/diccionario_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/diccionario_mini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/diccionario_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/diccionario_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/letras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/letras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/letras_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/data/letras_mini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/run" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ej04_juego_letras/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/private_inputs/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/private_inputs/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/private_inputs/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/private_inputs/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/public_inputs/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/public_inputs/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/public_inputs/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/public_inputs/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/test01/run_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/test01/run_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastapi/api_utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastapi/api_utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastapi/api_utils/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastapi/api_utils/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastapi/api_utils/comm.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastapi/api_utils/comm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastapi/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastapi/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastapi/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../install_docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../install_docker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/Doxyfile.in" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/Doxyfile.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/doc/doxyque.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/doc/doxyque.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/doc/invert.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/doc/invert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/include/image.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/include/image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/include/imageIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/include/imageIO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/image.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/image.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/imageIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/imageIO.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/imageop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/imageop.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/negativo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/estudiante/src/negativo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/expected/contraste_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/expected/contraste_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/expected/icono_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/expected/icono_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/expected/negativo_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/expected/negativo_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/expected/subimagen_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/expected/subimagen_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/expected/zoom_pub.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/expected/zoom_pub.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/img/board.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/img/board.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/img/shuffle_9973.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/img/shuffle_9973.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/img/vacas.pgm" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/img/vacas.pgm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/doc/doxyque.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/doc/doxyque.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/doc/invert.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/doc/invert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/include/image.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/include/image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/include/imageIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/include/imageIO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/barajar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/barajar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/barajar_eficiencia.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/barajar_eficiencia.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/collage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/collage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/contraste.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/contraste.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/icono.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/icono.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/image.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/image.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/imageIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/imageIO.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/imagen_blanca.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/imagen_blanca.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/imageop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/imageop.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/morphing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/morphing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/negativo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/negativo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/subimagen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/subimagen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/zoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej01_imagenes/profesor/src/zoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxyfile.in" beforeDir="false" afterPath="$PROJECT_DIR$/Doxyfile.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/include/maxqueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/include/maxqueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/include/maxstack.h" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/include/maxstack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/cola_max.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/cola_max.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/maxqueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/maxqueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/maxstack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/maxstack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/pila_max.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/pila_max.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profesor/include/maxqueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/profesor/include/maxqueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profesor/include/maxstack.h" beforeDir="false" afterPath="$PROJECT_DIR$/profesor/include/maxstack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profesor/src/cola_max.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/profesor/src/cola_max.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profesor/src/maxqueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/profesor/src/maxqueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profesor/src/maxstack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/profesor/src/maxstack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profesor/src/pila_max.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/profesor/src/pila_max.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/Doxyfile.in" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/Doxyfile.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/diccionario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/diccionario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/dictionary_pub.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/dictionary_pub.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras_mini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras_pri.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras_pri.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/letras_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/data/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/data/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/data/diccionario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/data/diccionario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/data/letras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/data/letras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/bag.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/bag.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/dictionary.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/dictionary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/letters_bag.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/letters_bag.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/letters_set.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/include/letters_set.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/bolsa.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/bolsa.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/dictionary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/dictionary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/letters_bag.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/letters_bag.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/letters_set.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/estudiante/src/letters_set.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/bag.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/bag.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/dictionary.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/dictionary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/letters_bag.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/letters_bag.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/letters_set.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/include/letters_set.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/bolsa.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/bolsa.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/bolsa_letras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/bolsa_letras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/cantidad_letras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/cantidad_letras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/conjunto_letras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/conjunto_letras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/dictionary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/dictionary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/letters_bag.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/letters_bag.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/letters_set.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/letters_set.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/palabras_longitud.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej03_tdas_letras/profesor/src/palabras_longitud.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/Doxyfile.in" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/Doxyfile.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_10000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_10000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_15000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_15000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_20000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_20000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_25000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_25000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_30000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_30000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_35000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_35000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_40000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_40000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_45000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_45000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_5000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_5000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_50000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_50000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_55000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_55000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_60000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_60000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_65000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_65000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_70000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_70000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionario_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionarios.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/diccionarios.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/data/letras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/data/letras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/dictionary.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/dictionary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/node.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/node.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/tree.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/include/tree.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/src/dictionary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/estudiante/src/dictionary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/bag.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/bag.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/dictionary.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/dictionary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/letters_bag.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/letters_bag.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/letters_set.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/letters_set.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/node.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/node.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/solver.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/solver.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/tree.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/include/tree.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/cantidad_letras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/cantidad_letras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/diccionario.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/diccionario.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/dictionary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/dictionary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/letters_bag.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/letters_bag.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/letters_set.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/letters_set.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/palabras_validas_diccionario.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/palabras_validas_diccionario.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/partida_letras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/partida_letras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/partida_letras_eficiente.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/partida_letras_eficiente.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/partida_letras_profesor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/partida_letras_profesor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/solver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ej04_juego_letras/profesor/src/solver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test01/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../test01/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test01/contact_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../test01/contact_info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test01/include/judge0.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../test01/include/judge0.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test01/src/judge0.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../test01/src/judge0.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test01/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../test01/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../telegram_bot/CONFIG.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../telegram_bot/CONFIG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../telegram_bot/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../telegram_bot/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../telegram_bot/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../telegram_bot/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../telegram_bot/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../telegram_bot/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../telegram_bot/telegram_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../telegram_bot/telegram_bot.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="2FGXKan9D16BbOIdJR47JDNlnIf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MEGA/Trabajo/Docencia/2022/ED/practicas_ed/solutions_and_proposals/ej02_pilas_colas&quot;
+  }
+}</component>
+  <component name="RunManager" selected="CMake Application.cola_max">
+    <configuration name="cola_max" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p03_pilas_colas" TARGET_NAME="cola_max" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p03_pilas_colas" RUN_TARGET_NAME="cola_max">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maxqueue" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p03_pilas_colas" TARGET_NAME="maxqueue" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maxstack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p03_pilas_colas" TARGET_NAME="maxstack" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pila_max" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p03_pilas_colas" TARGET_NAME="pila_max" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p03_pilas_colas" RUN_TARGET_NAME="pila_max">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.cola_max" />
+      <item itemvalue="CMake Application.maxqueue" />
+      <item itemvalue="CMake Application.maxstack" />
+      <item itemvalue="CMake Application.pila_max" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fc78919-bfb2-4f43-9b3a-6fa479df4598" name="Changes" comment="" />
+      <created>1664119331817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664119331817</updated>
+      <workItem from="1664119332963" duration="43000" />
+      <workItem from="1669043299757" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
