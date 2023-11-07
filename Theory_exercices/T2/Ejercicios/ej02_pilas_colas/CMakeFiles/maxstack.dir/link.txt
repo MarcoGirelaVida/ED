@@ -1,2 +1,0 @@
-/usr/bin/ar qc estudiante/lib/libmaxstack.a CMakeFiles/maxstack.dir/estudiante/src/maxstack.cpp.o
-/usr/bin/ranlib estudiante/lib/libmaxstack.a
