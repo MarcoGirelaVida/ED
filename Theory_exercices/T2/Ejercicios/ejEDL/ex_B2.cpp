@@ -8,6 +8,7 @@ Ejemplo:
 C=<1,2,2,3,3,4,5,5,1,1,9,8,8,8,3> pasaría a quedar como C=<1,2,3,3,4,5,5,1,1,9,8,3>
 
 23:51
+00:08
 */
 
 #include <iostream>
@@ -27,7 +28,6 @@ void imprimir_cola(queue<int> &c)
 
 void transformarcola(queue<int> & c)
 {
-    queue<int> aux;
     int c_size = c.size();
     int cache = c.front();
     c.push(c.front());
