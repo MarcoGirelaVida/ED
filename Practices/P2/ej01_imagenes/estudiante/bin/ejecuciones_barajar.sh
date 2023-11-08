@@ -41,7 +41,7 @@ cat "$fichero_csv_cols" >> "$fichero_csv_comun"
 cat "$fichero_csv_fils" >> "$fichero_csv_comun"
 
 # Scripts de Gnuplot, me los ha hecho chatgpt pa que te voy a mentir, pero el resto le he hecho yo
-gnuplot <<EOF
+gnuplot << EOF
 # Configuración del gráfico
 set terminal pngcairo enhanced font 'Arial,12' size 800,600
 set output "grafica_$fichero_csv_comun.png"
@@ -58,7 +58,7 @@ splot "$fichero_csv_comun" using 2:1:3 with points title "Tiempo de Ejecución"
 EOF
 
 # Para grafica de las filas
-gnuplot <<EOF
+gnuplot << EOF
 # Configuración del gráfico
 set terminal pngcairo enhanced font 'Arial,12' size 800,600
 set output "grafica_$fichero_csv_fils.png"
