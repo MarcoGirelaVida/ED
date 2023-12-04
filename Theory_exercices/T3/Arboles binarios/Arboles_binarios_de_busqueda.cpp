@@ -121,3 +121,65 @@ if (padre != nullptr)
 
 // EJERCICIO: Construir el AVL Con las siguientes claves {1,2,3,4,5,6,7,15,14,13,12,11,10,9}.
 // Cuando haya que aplicar rotaciones especificar el tipo de rotación que se debe realizar
+
+
+// Función para comprobar si es ABB
+bool is_ABB(ArbolBinario<int> & ab){
+    retrun is_ABB_n(ab.getraiz());
+}
+
+bool is_ABB_N(ArbolBinario<int>::nodo n){
+    if (n.null())
+    {
+        return true;
+    }
+    else
+    {
+        int max = Maximo(n.hizq());
+        int min = Minimo(n.hder());
+        if (!n.hizq().null() && *n < *(n.hizq()))
+            return false;
+        if (!n.hder().null() && *n > (*(n.der())))
+            return false;
+        
+        return is_ABB_n(n.hizq()) && is_ABB_n(n.hder());
+        
+    }
+    
+    // Versión 2
+    if (n.null())
+        return true;
+    else if (!(*n) > min && *n <max)
+        return false;
+    else
+        
+}
+
+
+
+int Maximo(ArbolBinario<int>::nodo n){
+    if (n.null())
+        return numeric_limit<int>::min();
+
+    if (n.hizq().null() && n.hder().null())
+    {
+        return * n;
+    }
+    else
+    {
+        int mi = Maximo (n.hizq());
+        int md = Maximo (n.der());
+        int max = *n;
+        if (max < mi)
+        {
+            max = mi
+        }
+        if (max < md)
+        {
+            max = md;
+        }
+        
+        return max;
+    }
+    
+}
