@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ruta_aerea.dir/rutas_aereas/src/ruta_aerea.cpp.o -o ruta_aerea  libimage.a 

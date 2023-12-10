@@ -8,8 +8,7 @@
 #include <cassert>
 #include <iostream>
 
-#include <image.h>
-#include <imageIO.h>
+#include "image.h"
 
 using namespace std;
 
