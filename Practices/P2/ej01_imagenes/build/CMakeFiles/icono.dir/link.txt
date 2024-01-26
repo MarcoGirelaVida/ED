@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/icono.dir/estudiante/src/icono.cpp.o -o estudiante/bin/icono  estudiante/lib/libimage.a 

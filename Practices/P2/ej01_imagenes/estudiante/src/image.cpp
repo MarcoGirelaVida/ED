@@ -8,7 +8,8 @@
 #include <cassert>
 #include <iostream>
 
-#include "image.h"
+#include <image.h>
+#include <imageIO.h>
 
 using namespace std;
 
@@ -19,7 +20,6 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
     rows = nrows;
     cols = ncols;
 
-/* TIPO REP 1
     img = new byte * [rows];
 
     if (buffer != 0)
@@ -29,20 +29,6 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
 
     for (int i=1; i < rows; i++)
         img[i] = img[i-1] + cols;
-*/ 
-// TIPO REP 2
-    img = new byte*[rows];
-
-    for (size_t i = 0; i < rows; i++)
-    {
-        img[i] = new byte[cols];
-    }
-
-    if (buffer != 0)
-    {
-        for (size_t i = 0; i < rows*cols; i++)
-            img[i/cols][i%cols] = buffer[i];
-    }
 }
 
 // Función auxiliar para inicializar imágenes con valores por defecto o a partir de un buffer de datos
@@ -68,16 +54,10 @@ bool Image::Empty() const{
 }
 
 void Image::Destroy(){
-    /* TIPO REP 1
     if (!Empty()){
         delete [] img[0];
         delete [] img;
     }
-    */
-    for (size_t i = 0; i < rows; i++)
-        delete[] img[i];
-
-    delete[] img;
 }
 
 LoadResult Image::LoadFromPGM(const char * file_path){
@@ -105,8 +85,7 @@ Image::Image(){
 // Constructores con parámetros
 Image::Image (int nrows, int ncols, byte value){
     Initialize(nrows, ncols);
-    for (int k=0; k<rows*cols; k++)
-        set_pixel(k,value);
+    for (int k=0; k<rows*cols; k++) set_pixel(k,value);
 }
 
 bool Image::Load (const char * file_path) {
@@ -159,32 +138,24 @@ byte Image::get_pixel (int i, int j) const {
     return img[i][j];
 }
 
+// This doesn't work if representation changes
 void Image::set_pixel (int k, byte value) {
-    int i = k / get_cols();
-    int j = k % get_cols();
-    return set_pixel(i, j, value);
+    // TODO this makes assumptions about the internal representation
+    // TODO Can you reuse set_pixel(i,j,value)?
+    img[0][k] = value;
 }
 
+// This doesn't work if representation changes
 byte Image::get_pixel (int k) const {
-    int i = k / get_cols();
-    int j = k % get_cols();
-    return get_pixel(i, j);
+    // TODO this makes assumptions about the internal representation
+    // TODO Can you reuse get_pixel(i,j)?
+    return img[0][k];
 }
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
-    byte * p = new byte[size()];
-
-    cerr << "For_Save" << endl;
-    for (size_t i = 0; i < size(); i++)
-        p[i] = get_pixel(i);
-    cerr << "/For_Save" << endl << endl;
-    cerr << "WritePGMImage" << endl;
-    bool success = WritePGMImage(file_path, p, rows, cols);
-    cerr << "/WritePGMImage" << endl << endl;
-
-    delete[] p;
-
-    return success;
+    // TODO this makes assumptions about the internal representation
+    byte * p = img[0];
+    return WritePGMImage(file_path, p, rows, cols);
 }
 

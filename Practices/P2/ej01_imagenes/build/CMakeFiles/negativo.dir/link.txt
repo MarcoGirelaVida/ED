@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o -o estudiante/bin/negativo  estudiante/lib/libimage.a 
