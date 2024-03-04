@@ -1,0 +1,94 @@
+/*! \mainpage Main Page
+
+@image html final.jpg
+
+# Introducción
+
+Se encuentra ante la documentación de la _práctica final de ED: Imágenes_.
+Dicha práctica se compone de los siguientes elementos:
+- Implementación del TDA _Imagen_
+- Implementación del TDA _Punto_
+- Implementación del TDA _Pais_ y _Paises_
+- Implementación del TDA _Ruta_ y _Almacen_Rutas_
+- Una serie de programas que hacen uso de estos TDAs:
+  - [pruebapegado](#pruebapegado "Prueba Pegado")
+  - [pruebarotacion](#pruebarotacion "Prueba Rotación")
+  - [ruta_aerea](#ruta_aerea "Rutas aereas")  
+### Nota: Ruta aerea a veces no funciona la primera (se queda como pillado), si esto ocurre, haga Ctrl+C y vuélvalo a ejecutar.
+# Compilación y ejecución
+
+## Compilación
+Primero descargue el proyecto desde el repositorio de GitHub:
+@code{.sh}
+git clone https://github.com/MarcoGirelaVida/PracticaFinalED.git
+cd PracticaFinalED
+@endcode
+
+A continuación, ejecute el siguiente comando para compilar el proyecto:
+@code{.sh}
+mkdir build
+cd build
+cmake ..
+make
+@endcode
+
+## Ejecución
+Una vez compilado el proyecto, para acceder y ejecutar los ficheros binarios acceda a la carpeta bin:
+@code{.sh}
+cd bin
+@endcode
+
+Una vez dentro, para ejecutar los programas, ejecute el siguiente comando:
+@code{.sh}
+./\<nombre_programa\> \<parámetros\>
+@endcode
+
+
+
+# Ejecutables
+
+## Prueba pegado {#pruebapegado}
+
+Pega una imagen dada sobre otra
+
+> __pruebapegado__ \<path/src.ppm\> \<path/to_paste.ppm\> \<path/mascara_to_paste.ppm\> \<path/output.ppm\> \<num_fila\> \<num_columna\> \<tipo_pegado\>
+@param <path/src.ppm> Imagen donde pegar
+@param <path/to_paste.ppm> Imagen a pegar
+@param <path/mascara_to_paste.ppm> Máscara de trasparencia que se aplicará sobre la imagen a pegar
+@param <path/output.ppm> Imagen donde se guardará la salida de la operación
+@param <num_fila> Fila a partir de la que empieza el pegado
+@param <num_columna> Columna a partir de la que empieza el pegado
+@param <tipo_pegado> Tipo de pegado que se aplicará, 0 si es opaco, 1 si es blending
+
+@image html pruebapegado.jpg "pruebapegado"
+
+## Prueba rotación {#pruebarotacion}
+
+Rota una imagen dada con el ángulo dado
+
+> __pruebarotacion__ \<path/avion.ppm\> \<angulo\> \<path/fichero_resultante.ppm\>
+@param <path/avion.ppm> Imagen que se desea rotar.
+@param <angulo> Ángulo con el que se quiere girar la imagen
+@param <path/fichero_resultante.ppm> Fichero donde se desea que se almacene el resultado de la rotación
+
+@image html pruebarotacion.jpg "pruebarotacion"
+
+## Ruta Aerea {#ruta_aerea}
+
+Devuelve una imagen con el diagrama de la ruta aerea proporcionada.
+
+> __ruta_aerea__ \<path/Lista_paises.txt\> \<path/mapa.ppm\> \<path_imagenes_banderas\> \<path/almacenrutas.txt\> \<path/avion.ppm\> \<path/mascaraavion.ppm\>
+@param <path/Lista_paises.txt> Fichero.txt con las ubicaciones de cada pais y la localización de sus imágenes
+@param <path/mapa.ppm> Imagen del mapa que se tomará como base
+@param <path_imagenes_banderas> Fila de la imagen original donde se encuentra la esquina superior izquierda de la subimagen
+@param <path/almacenrutas.txt> Fichero.txt donde se encuentran las posbiles rutas que se pueden tomar
+@param <path/avion.ppm> Imagen del avión que se mostrará en la ruta
+@param <path/mascaraavion.ppm> Máscara de trasparencia que se le aplicará a la imagen del avión
+
+@image html ruta_aerea.jpg "ruta_aerea"
+
+# Autores
+Los autores de esta práctica son:
+- **Marco Girela Vida, Grupo B3**
+- **David Pérez Tobarra, Grupo B2**
+*/
